@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///Users/lfarr15/Downloads/untitled%203/src/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./index_files/style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+  <h1>A CHOICE<br>YOU DON'T HAVE.</h1>
+  <p class="intro">How much do you take for granted?</p>
+
+  <div class="progress-area">
+    <span id="question-number">QUESTION 01 / 04</span>
+    <div class="progress-track">
+      <div id="progress-bar" style="width: 25%;"></div>
+    </div>
+  </div>
+
+  <main id="quiz">
+    <p class="scenario-label">CHOOSE YOUR SITUATION</p>
+    <h2 id="question">Where do you wake up?</h2>
+
+    <div class="options">
+      <button class="option" id="option-a" onclick="chooseOption('a')">
+        <span class="option-letter">A</span>
+        <span id="text-a">In your own comfortable bed, ready to start the day.</span>
+        <span class="arrow">→</span>
+      </button>
+
+      <button class="option" id="option-b" onclick="chooseOption('b')">
+        <span class="option-letter">B</span>
+        <span id="text-b">On the side of the road, after another night without a safe place to sleep.</span>
+        <span class="arrow">→</span>
+      </button>
+    </div>
+
+    <div id="result" class="result hidden">
+      <p class="scenario-label">THINK ABOUT THIS</p>
+      <h3 id="result-title"></h3>
+      <p id="result-text"></p>
+
+      <button id="next-button" onclick="nextQuestion()">
+        NEXT QUESTION →
+      </button>
+    </div>
+  </main>
+
+
+</div>
+
+<div id="ending" class="ending hidden">
+  <h1>Behind every sleeping bag is a story we've ignored.</h1>
+  <div class="ending-line"></div>
+  <button onclick="restartQuiz()">EXPERIENCE AGAIN ↗</button>
+</div>
+
+<script src="./index_files/script.js"></script>
+
+
+</body></html>
